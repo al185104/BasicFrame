@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicFrame.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--fonts-->
+            <OnPlatform x:TypeArguments="x:String" x:Key="MaterialIcons">
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Gilroy">
+                <On Platform="Android" Value="Gilroy-Light.otf#Gilroy Light" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Gilroy-Bold">
+                <On Platform="Android" Value="Gilroy-ExtraBold.otf#Gilroy ExtraBold" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
