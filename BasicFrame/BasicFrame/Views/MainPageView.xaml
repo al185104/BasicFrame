@@ -6,7 +6,7 @@
              viewmodel:ViewModelLocator.AutoWireViewModel="True">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Happy Coding!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

@@ -27,29 +27,6 @@ namespace BasicFrame.Services.Settings
         private readonly string UrlIdentityDefault = GlobalSetting.Instance.BaseIdentityEndpoint;
         private readonly string UrlGatewayMarketingDefault = GlobalSetting.Instance.BaseGatewayMarketingEndpoint;
         private readonly string UrlGatewayShoppingDefault = GlobalSetting.Instance.BaseGatewayShoppingEndpoint;
-
-        // skan-keys
-        private const string IdDashboardStartDate = "dashboard_start_date";
-        private const string IdDashboardEndDate = "dashboard_end_date";
-        private const string IdDebugMode = "debug_mode";
-        // +new
-        private const string IdEasyTapPay = "easy_tap_pay";
-        private const string IdAutoPrintReceipt = "auto_print_receipt";
-        private const string IdShowPhoto = "show_photo";
-        private const string IdOfflineMode = "offline_mode";
-        private const string IdEnableAnimation = "enable_animation";
-        private const string IdTrainingMode = "training_mode";
-        // skan-values
-        private readonly bool DebugModeDefault = false;
-        private readonly string DashboardStartDateDefault = DateTime.Now.ToString();
-        private readonly string DashboardEndDateDefault = DateTime.Now.ToString();
-        // + new
-        private readonly bool EasyTapPayDefault = false;
-        private readonly bool AutoPrintReceiptDefault = false; 
-        private readonly bool ShowPhotoDefault = false;
-        private readonly bool OfflineModeDefault = false;
-        private readonly bool EnableAnimationDefault = false;
-        private readonly bool TrainingModeDefault = false;
         #endregion
 
         #region Settings Properties
@@ -112,59 +89,7 @@ namespace BasicFrame.Services.Settings
             get => GetValueOrDefault(IdAllowGpsLocation, AllowGpsLocationDefault);
             set => AddOrUpdateValue(IdAllowGpsLocation, value);
         }
-
-        //skan
-        public string DashboardStartDate
-        {
-            get => GetValueOrDefault(IdDashboardStartDate, DashboardStartDateDefault);
-            set => AddOrUpdateValue(IdDashboardStartDate, value);
-        }
-        public string DashboardEndDate
-        {
-            get => GetValueOrDefault(IdDashboardEndDate, DashboardEndDateDefault);
-            set => AddOrUpdateValue(IdDashboardEndDate, value);
-        }
-        public bool DebugMode
-        {
-            get => GetValueOrDefault(IdDebugMode, DebugModeDefault);
-            set => AddOrUpdateValue(IdDebugMode, value);
-        }
-
-        public bool EasyTapPay
-        {
-            get => GetValueOrDefault(IdEasyTapPay, EasyTapPayDefault);
-            set => AddOrUpdateValue(IdEasyTapPay, value);
-        }
-
-        public bool AutoPrintReceipt
-        {
-            get => GetValueOrDefault(IdAutoPrintReceipt, AutoPrintReceiptDefault);
-            set => AddOrUpdateValue(IdAutoPrintReceipt, value);
-        }
-
-        public bool ShowPhoto
-        {
-            get => GetValueOrDefault(IdShowPhoto, ShowPhotoDefault);
-            set => AddOrUpdateValue(IdShowPhoto, value);
-        }
-
-        public bool OfflineMode
-        {
-            get => GetValueOrDefault(IdOfflineMode, OfflineModeDefault);
-            set => AddOrUpdateValue(IdOfflineMode, value);
-        }
-
-        public bool EnableAnimation
-        {
-            get => GetValueOrDefault(IdEnableAnimation, EnableAnimationDefault);
-            set => AddOrUpdateValue(IdEnableAnimation, value);
-        }
-
-        public bool TrainingMode
-        {
-            get => GetValueOrDefault(IdTrainingMode, TrainingModeDefault);
-            set => AddOrUpdateValue(IdTrainingMode, value);
-        }
+        public bool DebugMode { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         #endregion
 
         #region Public Methods

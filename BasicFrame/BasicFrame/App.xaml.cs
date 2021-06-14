@@ -12,7 +12,6 @@ namespace BasicFrame
         public App()
         {
             InitializeComponent();
-            //Sharpnado.Shades.Initializer.Initialize(loggerEnable: false);
         }
 
         protected async override void OnStart()

@@ -18,18 +18,6 @@ namespace BasicFrame.Services.Settings
         #endregion
 
         bool DebugMode { get; set; }
-        
-        // +new
-        bool EasyTapPay { get; set; }
-        bool AutoPrintReceipt { get; set; }
-        bool ShowPhoto { get; set; }
-        bool OfflineMode { get; set; }
-        bool EnableAnimation { get; set; }
-        bool TrainingMode { get; set; }
-        // -new
-        string DashboardEndDate { get; set; }
-        string DashboardStartDate { get; set; }
-
 
         bool GetValueOrDefault(string key, bool defaultValue);
         string GetValueOrDefault(string key, string defaultValue);
